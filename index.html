@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html >
+<head>
+   <title>Flexbox</title>
+   <style>
+     
+     .heading{
+      font-size:30px;
+      text-align:center;
+      color:#001858;
+     }
+
+     .heading2{
+      text-align:center;
+      font-size:25px;
+      }
+
+      .card-container{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:row-reverse;
+        justify-content:start;
+        align-items:end;
+        height:350px;
+        
+      }
+
+      .card-container4{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:column-reverse;
+        justify-content:start;
+        align-items:end;
+        height:900px;
+     }
+
+      .card-container1{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:row;
+        justify-content:end;
+        align-items:center;
+        height:350px;
+      }
+
+      .card-container5{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:column;
+        justify-content:end;
+        align-items:center;
+        height:900px;
+      }
+
+      .card-container2{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:row;
+        justify-content:center;
+        align-items:start;
+        height:350px;
+      }
+
+      .card-container6{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:column;
+        justify-content:center;
+        align-items:start;
+        height:900px;
+      }
+
+      .card-container3{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:row-reverse;
+        justify-content:space-evenly;
+        align-items:end;
+        height:350px;
+      }
+
+      .cards1{
+           background-color: #fff2e6;
+           border:3px solid white;
+           border-radius:10px;
+           font-size:20px;
+           text-align:left;
+           height:290px;
+           width:380px;
+           margin:10px 12px;
+           padding:10px 12px;
+          }
+
+      .card-container8{
+        display:flex;
+        background-color: antiquewhite;
+        padding:10px 40px;
+        flex-direction:row;
+        flex:wrap;
+        align-items:center;
+        height:350px;
+      }
+
+      .card-container7{
+        display:flex;
+        background-color: antiquewhite;
+        flex-direction:column-reverse;
+        justify-content:space-evenly;
+        align-items:end;
+        height:900px;
+      }
+
+      .cards{
+           background-color: #fff2e6;
+           border:3px solid white;
+           border-radius:10px;
+           font-size:20px;
+           text-align:left;
+           height:200px;
+           width:380px;
+           margin:10px 12px;
+           padding:10px 12px;
+          }
+
+     .img{
+      background-color:white;
+      height:37px;
+      width:40px;
+      border:5px solid white;
+      border-radius:10px;
+      margin:8px 12px;
+      padding:10px 10px;
+     }
+   </style>
+   </head>
+<body>
+    
+<h4 class="heading"> flex-direction:row-reverse  justify-content:start  align-items:end</h4>
+    <div class="card-container">
+      
+      <div class="cards">
+          <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+            class="img" /><b class="heading2">Affordable Pricing</b>
+
+        <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+            and we provide more practical and industry-oriented knowledge.</p>
+    </div>
+
+        <div class="cards">
+          <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+            class="img" /><b class="heading2">Live interactive classes</b>
+
+        <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+      </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+      <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+    </div>
+  </div>
+
+  <h4 class="heading"> flex-direction:row  justify-content:end  align-items:center</h4>
+  <div class="card-container1">
+    
+    <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Affordable Pricing</b>
+
+      <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+          and we provide more practical and industry-oriented knowledge.</p>
+  </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Live interactive classes</b>
+
+      <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+    </div>
+
+    <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+    <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+  </div>
+</div>
+
+<h4 class="heading"> flex-direction:row  justify-content:center align-items:start</h4>
+  <div class="card-container2">
+    
+    <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Affordable Pricing</b>
+
+      <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+          and we provide more practical and industry-oriented knowledge.</p>
+  </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Live interactive classes</b>
+
+      <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+    </div>
+
+    <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+    <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+  </div>
+</div>
+
+<h4 class="heading"> flex-direction:row-reverse  justify-content:space-evenly align-items:end</h4>
+  <div class="card-container3">
+    
+    <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Affordable Pricing</b>
+
+      <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+          and we provide more practical and industry-oriented knowledge.</p>
+  </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Live interactive classes</b>
+
+      <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+    </div>
+
+    <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+    <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+  </div>
+</div>
+
+<h4 class="heading"> flex-direction:row  flex:wrap align-items:center</h4>
+  <div class="card-container8">
+    
+    <div class="cards1">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Affordable Pricing</b>
+
+      <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+          and we provide more practical and industry-oriented knowledge.</p>
+  </div>
+
+      <div class="cards1">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Live interactive classes</b>
+
+      <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+    </div>
+
+    <div class="cards1">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+    <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+  </div>
+  
+  <div class="cards1">
+    <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+      class="img" /><b class="heading2">Live interactive classes</b>
+
+  <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+</div>
+<div class="cards1">
+  <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+    class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+<p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+</div>
+</div>
+
+<h4 class="heading"> flex-direction:column  justify-content:start  align-items:end</h4>
+    <div class="card-container4">
+      
+      <div class="cards">
+          <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+            class="img" /><b class="heading2">Affordable Pricing</b>
+
+        <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+            and we provide more practical and industry-oriented knowledge.</p>
+    </div>
+
+        <div class="cards">
+          <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+            class="img" /><b class="heading2">Live interactive classes</b>
+
+        <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+      </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+      <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+    </div>
+  </div>
+  
+  <h4 class="heading"> flex-direction:column justify-content:end  align-items:center</h4>
+  <div class="card-container5">
+    
+    <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Affordable Pricing</b>
+
+      <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+          and we provide more practical and industry-oriented knowledge.</p>
+  </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Live interactive classes</b>
+
+      <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+    </div>
+
+    <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+    <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+  </div>
+</div>
+<h4 class="heading"> flex-direction:column justify-content:center align-items:start</h4>
+<div class="card-container6">
+  
+  <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Affordable Pricing</b>
+
+    <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+        and we provide more practical and industry-oriented knowledge.</p>
+</div>
+
+    <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Live interactive classes</b>
+
+    <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+  </div>
+
+  <div class="cards">
+    <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+      class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+  <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+</div>
+</div>
+
+<h4 class="heading"> flex-direction:column-reverse  justify-content:space-evenly align-items:end</h4>
+  <div class="card-container7">
+    
+    <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Faffordable-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Affordable Pricing</b>
+
+      <p>Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India,
+          and we provide more practical and industry-oriented knowledge.</p>
+  </div>
+
+      <div class="cards">
+        <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flive-classes-md.png&w=64&q=75"
+          class="img" /><b class="heading2">Live interactive classes</b>
+
+      <p>Attend live class and get your doubts cleared by the instructor in real-time just like a physical classroom. No boring pre-recorded videos.</p>
+    </div>
+
+    <div class="cards">
+      <img src="https://www.roadtocode.org/_next/image?url=https%3A%2F%2Fcdn.roadtocode.org%2Funique-features%2Flifetime-free-notes-md.png&w=64&q=75"
+        class="img" /><b class="heading2">Lifetime Free Notes</b>
+
+    <p>Get lifetime access of the notes that you can refer anytime in the future. High-quality notes prepared by the instructor. No need to buy any books.</p>
+  </div>
+</div>
+</body>
+</html>
