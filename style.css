@@ -1,0 +1,21 @@
+
+
+.heading{
+    font-size:30px;
+    text-align:center;
+    color:#001858;
+   }
+
+   .heading2{
+    text-align:center;
+    font-size:25px;
+    }
+    .img{
+        background-color:white;
+        height:37px;
+        width:40px;
+        border:5px solid white;
+        border-radius:10px;
+        margin:8px 12px;
+        padding:10px 10px;
+       }
